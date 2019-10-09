@@ -53,7 +53,7 @@ specific use case. If you compare the original module with my version, you will 
 been highly modified in the following ways: 
  1) The majority of the module's methods, API endpoints, and sub-modules have been stripped out. My use case only   
     required the Authentication API and the Interaction submodule. 
- 2) At the time of this initiative, the marketing_cloud module coult only use the legacy Authentication API. In order to
+ 2) At the time of this initiative, the marketing_cloud module could only use the legacy Authentication API. In order to
     ensure that the all forms could submit data regardless of the Authentication API required by Marketing Cloud, 
     I needed to further customize the module to work with both the legacy and enhanced Auth APIs. 
  3) Originally, the marketing_cloud module was configured to get the Authentication token statically - user's had to go
