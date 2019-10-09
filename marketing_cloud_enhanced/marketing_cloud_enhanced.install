@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the marketing_cloud_enhanced module.
+ */
+
+/**
+ * Remove validate_schema from the default configuration of marketing_cloud_enhanced.
+ */
+function marketing_cloud_enhanced_update_8001() {
+  $config_name = 'marketing_cloud_enhanced.settings';
+  $key = 'validate_schema';
+
+  $config = \Drupal::service('config.factory')
+    ->getEditable($config_name);
+  if ($config->get($key) !== NULL) {
+    $config->clear($key)->save();
+  }
+}

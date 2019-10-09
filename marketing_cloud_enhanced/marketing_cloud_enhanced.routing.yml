@@ -1,0 +1,7 @@
+marketing_cloud_enhanced.settings:
+  path: '/admin/config/marketing_cloud_enhanced'
+  defaults:
+    _form: '\Drupal\marketing_cloud_enhanced\Form\MarketingCloudEnhancedSettings'
+    _title: 'Marketing Cloud Enhanced'
+  requirements:
+    _permission: 'administer_marketing_cloud_enhanced'

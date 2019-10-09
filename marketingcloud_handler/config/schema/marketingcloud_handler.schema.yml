@@ -1,0 +1,9 @@
+# Schema for the configuration of the marketing_cloud_submission webform handler.
+
+webform.handler.marketingcloud_handler:
+  type: mapping
+  label: Marketing Cloud Handler
+  mapping:
+    event_definition_key:
+      type: string
+      label: 'Event Definition Key'

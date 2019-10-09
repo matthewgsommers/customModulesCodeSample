@@ -1,0 +1,4 @@
+services:
+  marketing_cloud_enhanced.service:
+    class: Drupal\marketing_cloud_enhanced\MarketingCloudEnhancedService
+    arguments: ['@config.factory', '@logger.factory', '@http_client', '@messenger']

@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains uninstall() and uninstall() hooks.
+ */
+
+use Drupal\Core\Entity\EntityStorageException;
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+
+/**
+ * Implements hook_uninstall().
+ */
+function marketingcloud_handler_uninstall() {
+  // Delete 'marketing_cloud_submission' webform.
+  try {
+    $webformEntity = \Drupal::entityTypeManager()
+      ->getStorage('webform')
+      ->load('marketingcloud_handler');
+    if (!is_null($webformEntity)) {
+      $webformEntity->delete();
+    }
+  }
+  catch (InvalidPluginDefinitionException $e) {
+    \Drupal::logger(__FUNCTION__)->info('an error occurred trying to delete the marketing cloud submission webform: %message', ['%message' => $e->getMessage()]);
+  }
+  catch (EntityStorageException $e) {
+    \Drupal::logger(__FUNCTION__)->info('an error occurred trying to delete the marketing cloud submission webform: %message', ['%message' => $e->getMessage()]);
+  }
+}

@@ -1,0 +1,5 @@
+marketing_cloud_enhanced.settings:
+  title: Marketing Cloud Enhanced
+  description: Configure the Marketing Cloud module
+  route_name: marketing_cloud_enhanced.settings
+  base_route: marketing_cloud_enhanced.settings

@@ -1,0 +1,7 @@
+name: Marketing Cloud Handler
+description: Allow users to submit data to marketing cloud via the handler
+package: custom
+type: module
+version: 1.0
+core: 8.x
+configure: marketingcloud_handler.admin_settings

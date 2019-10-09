@@ -1,0 +1,11 @@
+grant_type: "client_credentials"
+client_id: "insert_client_id"
+client_secret: "insert_client_secret"
+validate_json: true
+do_not_send: false
+base_url: "insert_base_url"
+request_token_url: "insert_request_token_url"
+login_attempts_max: 3
+request_token_wait: 10
+token: "0"
+requesting_token: false

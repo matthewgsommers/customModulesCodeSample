@@ -1,0 +1,5 @@
+marketing_cloud_enhanced.settings:
+  title: Marketing Cloud enhanced
+  description: Configure the Marketing Cloud module
+  parent: system.admin_config_services
+  route_name: marketing_cloud_enhanced.settings

@@ -1,0 +1,7 @@
+marketing_cloud_enhanced_interaction.settings:
+  path: /admin/config/marketing_cloud_enhanced/interaction
+  defaults:
+    _form: \Drupal\marketing_cloud_enhanced_interaction\Form\EnhancedInteractionSettings
+    _title: Interaction Endpoints
+  requirements:
+    _permission: administer_marketing_cloud_enhanced
